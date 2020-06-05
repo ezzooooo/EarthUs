@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.svg.etu.feed.FeedDAO">
+    <insert id="insertFeed" parameterType="com.svg.etu.feed.FeedVO">
+        insert into feed(user_id, img, garbage_type, location)
+        values(#{user_id},#{img},#{garbage_type},#{location})
+    </insert>
+    
+    <select id="getFeedList" resultType="com.svg.etu.feed.FeedVO">
+    	select *
+    	from feed
+    </select>
+</mapper>
