@@ -13,9 +13,9 @@ public class FeedServiceImpl implements FeedService {
 	SqlSessionTemplate sqlSessionTemplate;
 	
 	@Override
-	public int insertFeed(FeedVO vo) {	
+	public void insertFeed(FeedVO vo) {	
 		System.out.println("----------[InsertFeed 함수 호출]----------");
-		return sqlSessionTemplate.insert("insertFeed", vo);
+		sqlSessionTemplate.insert("insertFeed", vo);
 	}
 
 	@Override

@@ -6,7 +6,7 @@ public class LocationVO {
 	private String country_code;
 	private String sido;
 	private String sido_code;
-	private String sigungu;
+	private String sigugun;
 	
 	public int getId() {
 		return id;
@@ -38,11 +38,11 @@ public class LocationVO {
 	public void setSido_code(String sido_code) {
 		this.sido_code = sido_code;
 	}
-	public String getSigungu() {
-		return sigungu;
+	public String getSigugun() {
+		return sigugun;
 	}
-	public void setSigungu(String sigungu) {
-		this.sigungu = sigungu;
+	public void setSigugun(String sigugun) {
+		this.sigugun = sigugun;
 	}
 	
 	

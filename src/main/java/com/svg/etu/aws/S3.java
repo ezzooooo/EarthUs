@@ -15,7 +15,7 @@ import com.amazonaws.services.s3.model.ObjectMetadata;
 import com.amazonaws.services.s3.model.PutObjectRequest;
 
 /*
- * AWS S3에 이미지 업로드, 다운로드를 위한 클래스
+ * AWS S3를 사용하기 위한 클래스
  * 
  * Credentials로 인증을 하고 S3 클라이언트를 받아온다. 
  * Region은 'ap-northeast-2'로 서울 리전.

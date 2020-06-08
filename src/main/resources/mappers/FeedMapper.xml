@@ -3,8 +3,8 @@
  
 <mapper namespace="com.svg.etu.feed.FeedDAO">
     <insert id="insertFeed" parameterType="com.svg.etu.feed.FeedVO">
-        insert into feed(user_id, img, garbage_type, location)
-        values(#{user_id},#{img},#{garbage_type},#{location})
+        insert into feed(user_id, img, garbage_type, location, created_at)
+        values(#{user_id},#{img},#{garbage_type},#{location}, now())
     </insert>
     
     <select id="getFeedList" resultType="com.svg.etu.feed.FeedVO">
