@@ -19,5 +19,6 @@
   
   <mappers>
     <mapper resource="mappers/FeedMapper.xml"/>
+    <mapper resource="mappers/UserMapper.xml"/>
   </mappers>
 </configuration>
